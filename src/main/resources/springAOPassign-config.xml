@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <context:annotation-config/>
+    <aop:aspectj-autoproxy/>
+
+    <!--for Ques3-->
+    <bean id="eventPublisher" class="Ques3.EventPublisher"/>
+
+    <!--for Ques4-->
+    <bean id="service1" class="Ques4.Service"/>
+    <bean id="serviceAspect1" class="Ques4.ServiceAspects"/>
+
+    <!--for Ques5-->
+    <bean id="service2" class="Ques5.Service"></bean>
+    <bean id="serviceAspect2" class="Ques5.ServiceAspects"></bean>
+
+    <!--for Ques6-->
+    <bean id="exceptionService" class="Ques6.ExceptionService"></bean>
+    <bean id="exceptionServiceAspects" class="Ques6.ExceptionServiceAspects"></bean>
+
+    <!--for Ques7-->
+    <bean id="serviceBean" class="Ques7.ServiceBean"></bean>
+    <bean id="serviceBeanAspects" class="Ques7.ServiceBeanAspects"></bean>
+
+    <!--for Ques8-->
+    <bean id="pointCutAspects" class="Ques8.PointCutAspects"></bean>
+    <bean id="pointCutService" class="Ques8.PointCutService"></bean>
+
+    <!--for Ques9-->
+    <bean id="beforeAdvice" class="Ques9.BeforeAdvice"></bean>
+    <bean id="beforeAspects" class="Ques9.BeforeAspects"></bean>
+
+
+
+
+    <bean id="database" class="AOPEx.Database">
+        <property name="name" value="mySql"/>
+        <property name="port" value="3306"/>
+    </bean>
+    <bean id="myAspect" class="AOPEx.MyAspect"></bean>
+</beans>
