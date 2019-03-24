@@ -7,17 +7,23 @@ import org.aspectj.lang.annotation.Before;
 public class ServiceBeanAspects {
 
 
-//    @Before("bean(serviceBean))")
-//    void beforeAdvice() {
-//        System.out.println("Running before advice");
-//    }
+/*    @Before("bean(serviceBean))")
+    void beforeAdvice() {
+        System.out.println("Running before advice");
+    }*/
 
-    @Before("args(Integer)")
+/*    @Before("args(Integer)")
+    void beforeAdvice() {
+        System.out.println("Running before advice");
+    }*/
+
+/*    @Before("this(Ques7.ServiceBean)")
+    void beforeAdvice() {
+        System.out.println("Running before advice");
+    }*/
+
+    @Before("within(Ques7.*)")
     void beforeAdvice() {
         System.out.println("Running before advice");
     }
-//    @Before("this(ex7.ServiceBean)")
-//    void beforeAdvice() {
-//        System.out.println("Running before advice");
-//    }
 }

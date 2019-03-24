@@ -3,11 +3,11 @@ package Ques8;
 public class PointCutService {
 
 
-    void display(){
-        System.out.println("display from pointcutservice class");
+    void display8(){
+        System.out.println("display8() from PointCutService class");
     }
 
     public String getString(){
-        return "agav";
+        return "getString()";
     }
 }

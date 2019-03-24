@@ -9,7 +9,7 @@ public class Main {
                 new ClassPathXmlApplicationContext("springAOPassign-config.xml");
         context.start();
         Service service=(Service) context.getBean("service2");
-        service.display();
+        service.display5();
         context.stop();
 
     }

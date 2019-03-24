@@ -10,11 +10,9 @@ public class Main {
         ConfigurableApplicationContext context =
                 new ClassPathXmlApplicationContext("springAOPassign-config.xml");
         context.start();
-        PointCutService pointCutService=(PointCutService) context.getBean("pointCutService");
-        pointCutService.display();
+        PointCutService pointCutService= (PointCutService) context.getBean("pointCutService");
+        pointCutService.display8();
         System.out.println(pointCutService.getString());
-
         context.stop();
-
     }
 }

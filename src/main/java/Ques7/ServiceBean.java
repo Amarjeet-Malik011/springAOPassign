@@ -2,15 +2,15 @@ package Ques7;
 
 public class ServiceBean {
 
-    public void display(){
-        System.out.println("display of servicebean");
+    public void display7(){
+        System.out.println("display of serviceBean");
     }
 
     public void sum(Integer integer){
-        System.out.println(" sum interger type arg");
+        System.out.println(" sum integer type arg");
     }
 
     public void multiply(Integer integer){
-        System.out.println("mul interger type arg");
+        System.out.println("multiply integer type arg");
     }
 }

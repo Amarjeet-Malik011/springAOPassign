@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class EventPublisher implements ApplicationEventPublisherAware {
     ApplicationEventPublisher publisher;
-
     @Override
     public void setApplicationEventPublisher(ApplicationEventPublisher publisher) {
         this.publisher=publisher;

@@ -20,31 +20,23 @@
     <bean id="serviceAspect1" class="Ques4.ServiceAspects"/>
 
     <!--for Ques5-->
-    <bean id="service2" class="Ques5.Service"></bean>
-    <bean id="serviceAspect2" class="Ques5.ServiceAspects"></bean>
+    <bean id="service2" class="Ques5.Service"/>
+    <bean id="serviceAspect2" class="Ques5.ServiceAspects"/>
 
     <!--for Ques6-->
-    <bean id="exceptionService" class="Ques6.ExceptionService"></bean>
-    <bean id="exceptionServiceAspects" class="Ques6.ExceptionServiceAspects"></bean>
+    <bean id="exceptionService" class="Ques6.ExceptionService"/>
+    <bean id="exceptionServiceAspects" class="Ques6.ExceptionServiceAspects"/>
 
     <!--for Ques7-->
-    <bean id="serviceBean" class="Ques7.ServiceBean"></bean>
-    <bean id="serviceBeanAspects" class="Ques7.ServiceBeanAspects"></bean>
+    <bean id="serviceBean" class="Ques7.ServiceBean"/>
+    <bean id="serviceBeanAspects" class="Ques7.ServiceBeanAspects"/>
 
     <!--for Ques8-->
-    <bean id="pointCutAspects" class="Ques8.PointCutAspects"></bean>
-    <bean id="pointCutService" class="Ques8.PointCutService"></bean>
+    <bean id="pointCutAspects" class="Ques8.PointCutAspects"/>
+    <bean id="pointCutService" class="Ques8.PointCutService"/>
 
     <!--for Ques9-->
-    <bean id="beforeAdvice" class="Ques9.BeforeAdvice"></bean>
-    <bean id="beforeAspects" class="Ques9.BeforeAspects"></bean>
+    <bean id="beforeAdvice" class="Ques9.BeforeAdvice"/>
+    <bean id="beforeAspects" class="Ques9.BeforeAspects"/>
 
-
-
-
-    <bean id="database" class="AOPEx.Database">
-        <property name="name" value="mySql"/>
-        <property name="port" value="3306"/>
-    </bean>
-    <bean id="myAspect" class="AOPEx.MyAspect"></bean>
 </beans>
